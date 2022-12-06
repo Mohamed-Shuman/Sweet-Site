@@ -1,0 +1,12 @@
+.cart-itms-h2{
+    text-align: left;
+    font-family: 'Cairo', sans-serif !important;
+    font-weight:  368; 
+    font-size: 70px;
+    font-style: oblique;
+    padding-left: 60px;
+    text-transform: capitalize;  
+    color: rgb(190, 51, 144);
+    position: relative;
+    top: 20px;
+}

@@ -1,0 +1,55 @@
+form{
+    background-image: url("istockphoto-1054228718-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    height: 800px;
+}
+form input{
+    width: 20%;
+    height: 60px;
+    margin: 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+[type="email"]{
+    width: 43%;
+}
+label{
+    font-size: xx-large;
+    margin: 30px;
+}
+[type="date"]{
+    width: 29.5%;
+}
+.gender1{
+    width: 30px;
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+.gender2{
+    width: 30px;
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+[type="submit"]{
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+[type="submit"]:hover{
+    background-color: rgb(190, 51, 144);
+    cursor: pointer;
+}
+input[placeholder]{
+    font-size: x-large;
+    color: black;
+    padding-left: 10px;
+}
+footer{
+    margin-top: 10px;
+}
