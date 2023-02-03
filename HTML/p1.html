@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sweet</title>
-        <link rel="stylesheet" href="p1.css">
+        <link rel="stylesheet" href="../CSS/p1.css">
+        <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/css/all.min.css">
+        <link rel="stylesheet" href="../CSS/all.min.css">
+        <link rel="stylesheet" href="../CSS/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -14,57 +17,78 @@
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@368;400&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- start header -->
         <header name="slid">
-            <a href="#"><h1>sweet</h1></a> 
-            <p class="p1"><span class="one">taste </span><span class="two">the </span><span class="three">sweety </span><span class="four">life </span></p><br>
-            <p class="clear"></p>
-            <img class="arrow-img" src="arrow-icon-clip-art-file-down-arrow-icon-png-balin-icon-arrow-right--32.png" width="100px" height="100px">
-        </header>
-        <nav class="nave-bar">
-            <div class="search">
-                <input class="i-search" type="text" name="search" placeholder="Search">
-                <input class="i-button" type="button" name="enter" value="Search">
+            <div class="container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h1>sweet</h1>
+                <p class="p1"><span class="one">taste </span><span class="two">the </span><span class="three">sweety </span><span class="four">life </span></p><br>
+                <p class="clear"></p>
+                <img class="arrow-img" src="../ima/arrow-icon-clip-art-file-down-arrow-icon-png-balin-icon-arrow-right--32.png" width="100px" height="100px">
             </div>
-            <div class="links">
-                <ul class="links-ul">
-                    <li><a class="home" data-text="Home page" href="p1.html">Home</a></li>
-                    <li><a class="serve" data-text="services" href="services.html">Services</a></li>
-                    <li><a class="cont" data-text="contact us" href="contact.html">contact us</a></li>
-                    <li><a class="sig" data-text="sign up" href="sign-up.html">sign up</a></li>
-                    <img src="cart.png" class="cart-img" alt="your cart">
-                </ul>
+        </header>
+        <!-- End header -->
+        <!-- Start nav -->
+        <nav class="nave-bar">
+            <div class="container">
+                <div class="search">
+                    <img src="../ima/cart.png" class="cart-img" alt="your cart">
+                </div>
+                <div class="links-container">
+                    <ul class="links">
+                        <li><a class="home" data-text="Home page" href="p1.html">Home</a></li>
+                        <li><a class="serve" data-text="services" href="services.html">Services</a></li>
+                        <li><a class="cont" data-text="contact us" href="contact.html">contact us</a></li>
+                        <li><a class="sig" data-text="sign up" href="sign-up.html">sign up</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </nav>
-        <h2 class="h2-coll">our collection</h2>
+        <!-- End nav -->
+        <!-- Start figure -->
         <figure class="main-fig">
-                <figure class="sub-fig">    
-                     <div><a href="#"><img src="images.jpg"></a>
-                    <figcaption class="caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim distinctio qui voluptatibus debitis facilis aperiam laborum fugit ut placeat ullam temporibus saepe quam, a consequatur earum modi at provident aspernatur. </figcaption>
-                    </div>
-                </figure>
-                <figure class="sub-fig">
-                    <div><a href="#"><img src="istockphoto-1054228718-612x612.jpg"></a>
-                    <figcaption class="caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim distinctio qui voluptatibus debitis facilis aperiam laborum fugit ut placeat ullam temporibus saepe quam, a consequatur earum modi at provident aspernatur. </figcaption>
-                    </div>
-                </figure>
-                <figure class="sub-fig">
-                     <div><a href="#"><img src="Avocado-Dip-Feature-1.jpg"></a>
-                    <figcaption class="caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim distinctio qui voluptatibus debitis facilis aperiam laborum fugit ut placeat ullam temporibus saepe quam, a consequatur earum modi at provident aspernatur. </figcaption>
-                    </div>
-                </figure>
-            </figure>  
-            <button class="more">More</button>
+            <div class="container">
+                <h2 class="h2-coll">Our Collection</h2>
+                <div class="sub-container">
+                    <figure class="sub-fig">
+                        <a><img src="../ima/images.jpg"></a>
+                        <figcaption class="caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim distinctio qui voluptatibus debitis facilis aperiam laborum fugit ut placeat ullam temporibus saepe quam, a consequatur earum modi at provident aspernatur. </figcaption>
+                    </figure>
+                    <figure class="sub-fig">
+                        <a><img src="../ima/istockphoto-1054228718-612x612.jpg"></a>
+                        <figcaption class="caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim distinctio qui voluptatibus debitis facilis aperiam laborum fugit ut placeat ullam temporibus saepe quam, a consequatur earum modi at provident aspernatur. </figcaption>
+                    </figure>
+                    <figure class="sub-fig">
+                        <a><img src="../ima/Avocado-Dip-Feature-1.jpg"></a>
+                        <figcaption class="caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim distinctio qui voluptatibus debitis facilis aperiam laborum fugit ut placeat ullam temporibus saepe quam, a consequatur earum modi at provident aspernatur. </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="more">More</div>
+        </figure>
+        <!-- End figure -->
+        <!-- start footer -->
         <footer>
-            <h4>A LITTLE BIT ABOUT US! </h4>
-            <p class="p2">We're a family run business with over 15 years<br>  experience in the sweet industry... <br>so you could say we know our Kola Cubes <br> from our Cola Bottles! We pride ourselves <br> in delivering the 'sweetest' service for our customers!</p>
-            <ul>
-                <li>mohamedshuman22@gmail.com</li>
-                <li>01154606107</li>
-                <li><a href="#">Our location</a></li>
-            </ul>
-            <div class="p3"><a href="#"><p>العربية</p><p>English</p><p>France</p><p>Espaniol</p><p>Italy</p></a></div>
+            <div class="container">
+                <h4>A LITTLE BIT ABOUT US! </h4>
+                <p class="p2">We're a family run business with over 15 years</p>
+                <ul>
+                    <li>mohamedshuman22@gmail.com</li>
+                    <li>01154606107</li>
+                    <li><a href="#">Our location</a></li>
+                </ul>
+                <div class="p3">
+                    <a href="#"><p>العربية</p></a>
+                    <a href="#"><p>English</p></a>
+                    <a href="#"><p>France</p></a>
+                    <a href="#"><p>Espaniol</p></a>
+                    <a href="#"><p>Italy</p></a>
+                </div>
+            </div>
         </footer>
-        <script src="p1.js"></script>
-        <script src="cart.js"></script>
+        <!-- End footer -->
+        <script src="../JS/p1.js"></script>
+        <script src="../JS/cart.js"></script>
     </body>
 </html>

@@ -7,52 +7,21 @@
 :root{
     --mainmargin: 10px;
 }
-body{
-    background-color: rgb(223, 219, 219);
-
+.contact{
+    font-weight: 368;
+    font-size: 90px;
+    font-style: oblique;
+    color: var(--main-color);
+    padding-bottom: 50px;
 }
-.mid{
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content:space-between;
-
-}
-.mid .f{
-    display: flex;
-    width:600px;
-    color: aliceblue;
-    background-color: #cb50a2cc;
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    box-shadow: 9px 7px 11px -3px #360e0e94;
-    position: relative;
-    right: 214px;
-    background-image: linear-gradient(180deg,#c570a9cc,gray);
-    caret-color: #cb50a2cc;
-}
-.mid .info{
-    width: 40%;
-    font-size: 32px;
-    line-height: 70px;
-}
-
-ul .o{
-    list-style-type: none;
-    list-style-position: unset;
-    list-style-image: url("file:///G:/project/project/project/img/icons/1.png");
-}
-ul .t{
-    list-style-type: none;
-    list-style-position: unset;
-    list-style-image: url("	file:///G:/project/project/project/img/icons/2.png");
-}
-ul .th{
-    list-style-type: none;
-    list-style-position: unset;
-    list-style-image: url("	file:///G:/project/project/project/img/icons/2.png");
+.f{
+    max-width: 80%;
+    margin: auto;
+    background-color: #a99494;
+    height: 100%;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
 }
 .f input{
     width: 100%;
@@ -60,14 +29,12 @@ ul .th{
     margin: var(--mainmargin,10px);  
     border-radius: 10px;
 }
-.f .t{
+.f .text2{
     width: 97%;
-    background-color: rgb(223, 219, 219);
-
 }
-.f .a {
+.f .name,
+.f .email{
     width: 250px;
-    background-color: rgb(223, 219, 219);
 }
 .f textarea{
     margin-top: var(--mainmargin,10px);  
@@ -75,19 +42,22 @@ ul .th{
     width: 97%;
     height: 200px;
     border-radius: 10px;
-    background-color: rgb(223, 219, 219);
 }
 .f input:focus{
-    border: 3px solid #555;
+    /* border: 3px solid #555; */
+    outline: none;
 }
 .f input[placeholder]{
     font-size: x-large;
     padding-left: 30px;
 }
 .f textarea[placeholder]{
-   font-size: xx-large;
-   padding-left: 30px;
-   padding-top: 20px;
+    font-size: xx-large;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.f textarea:focus{
+    outline: none;
 }
 .f .send{
     width: 200px;
@@ -99,4 +69,16 @@ ul .th{
 .f .send:hover{
     background-color: rgb(94, 45, 77);
     color: white;
+}
+@media (max-width: 575px) {
+    .f{
+        padding: 7px;
+    }
+}
+@media (max-width: 767px) {
+    footer::before{
+        position: absolute;
+        top: -165%;
+        height: 100%;
+    }
 }
